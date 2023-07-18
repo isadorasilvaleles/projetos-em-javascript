@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>js01_concatenacao.html</title>
+<meta http-equiv="content-Type" content="text/html; charset=iso 8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+
+</head>
+
+
+<style>
+
+body {
+
+    background-color: #00fff0;
+
+
+}
+
+</style>
+
+<body>
+ <h2>programa de boas vindas de  junção de nomes</h2>
+
+
+ <!--definição de formulario -->
+
+ <form name="FormConcatena" action="" method="post">
+    Digite seu nome ---------- : <input type="text" name = "f_name" /><br/>
+    Digite seu sobrenome ------ : <input type="text" name = "f_surname" /><br/>
+    <input type="button"  name = "bnt_concatenar" value="juntar" onclick="juntar()"/>
+<input type = "reset" name="btn_cancela" value="cancela" />
+</form>
+
+<!--javascript code-->
+
+<script linguage = "Javascript">
+
+/* objetivo : capturar o nomne e sobrenome do usuário , juntar os campos e apresentar uma 
+saudação personalizada 
+Elementos de entrada : método form  do objeto document
+Elementos de saída : método alert do objeto window */
+
+
+var js_name ; 
+var js_surname;
+var js_completename ;
+
+function juntar (){
+    js_name = document.FormConcatena.f_name.value;
+    js_surname = document.FormConcatena.f_surname.value;
+
+    js_completename =js_name+ " " + js_surname ;
+
+    window.alert ('ola ;' + js_completename);
+
+}
+
+
+</script>
+
+</body>
+
+
+
+</html>
